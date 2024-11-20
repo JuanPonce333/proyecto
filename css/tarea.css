@@ -1,0 +1,193 @@
+.horizontal{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #13a300;
+}
+
+.horizontal li{
+    float: right;
+}
+
+.horizontal li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.horizontal li a:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+figcaption{
+    margin-bottom: 50px;
+}
+
+.imagen11{
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+.imagen12{
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+footer{
+    background-color: brown;
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    height: 25px;
+    padding: 1%;
+}
+
+footer p{
+    color: white;
+}
+
+
+/* Contenedor de productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta según el ancho */
+    gap: 20px; /* Espaciado entre tarjetas */
+    padding: 20px;
+}
+
+/* Cada producto */
+.producto {
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra contenido */
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Animación */
+}
+
+/* Efecto hover en productos */
+.producto:hover {
+    transform: scale(1.05); /* Aumenta ligeramente */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+
+/* Imagen */
+.imagen {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 150px; /* Altura fija */
+    object-fit: cover; /* Ajuste sin distorsión */
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+    margin-bottom: 10px;
+}
+
+/* Título del producto */
+h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+/* Categoría */
+.categoria {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* Precio */
+.precio {
+    font-size: 18px;
+    color: #28a745; /* Verde para destacar precio */
+    font-weight: bold;
+}
+
+
+
+/* Tabla principal */
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse; /* Elimina doble borde */
+    margin: 20px 0; /* Separación de otros elementos */
+    font-size: 16px;
+    text-align: left;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo de las celdas */
+.tabla-productos th, 
+.tabla-productos td {
+    padding: 15px; /* Espaciado interno */
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+}
+
+/* Encabezado */
+.tabla-productos thead th {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #333; /* Texto oscuro */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: bold;
+}
+
+/* Filas alternas */
+.tabla-productos tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Fondo gris claro para filas impares */
+}
+
+/* Hover en filas */
+.tabla-productos tbody tr:hover {
+    background-color: #f1f1f1; /* Cambia el fondo al pasar el mouse */
+    cursor: pointer;
+}
+
+/* Imagen dentro de la tabla */
+.imagen-tabla {
+    width: 80px; /* Tamaño uniforme */
+    height: auto;
+    margin-right: 10px; /* Espaciado con el texto */
+    vertical-align: middle; /* Alinea con el texto */
+}
+
+/* Precio */
+.tabla-productos td:last-child {
+    font-weight: bold;
+    color: #28a745; /* Verde para destacar */
+    text-align: right; /* Alinea el precio a la derecha */
+}
+
+
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.input-filtro {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-filtro {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-filtro:hover {
+    background-color: #218838;
+}

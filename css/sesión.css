@@ -1,0 +1,45 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e1fae8;
+}
+
+.sesion{
+    width: 40%;
+    max-width: 500px;
+    background-color: #d1fcff;
+    border: solid 2px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sesion label{
+    margin-top: 2%;
+    width: 100%;
+}
+
+.sesion input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.sesion button{
+    width: 30%;
+    background-color: greenyellow;
+    color: black;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.sesion button:hover{
+    cursor: pointer;
+    background-color: #b5ffcc;
+}
